@@ -1,31 +1,30 @@
 {
   "categories": [
     {
-      "id": 1,
-      "name": "Điện thoại",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759
-    }
-  ],
-  "products": [
-    {
-      "id": 1,
-      "name": "IPhone X",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753760,
-      "categoryId": 1,
-      "salePrice": 15000000
+      "id": "18b9079e-b3ea-4183-9b91-ec0e1c168180",
+      "name": "Grocery",
+      "createdAt": 1616518759016,
+      "updatedAt": 1616518759016
     },
     {
-      "id": 2,
-      "name": "IPhone 12 Pro Max",
-      "createdAt": 1616346753759,
-      "updatedAt": 1616346753759,
-      "categoryId": 1,
-      "salePrice": 25000000
+      "id": "8c293522-006d-441c-8e28-f1103fa94b55",
+      "name": "Shoes",
+      "createdAt": 1616518759016,
+      "updatedAt": 1616518759016
+    },
+    {
+      "id": "d9fc937c-d736-4ec0-8b9e-f290f7fd8d27",
+      "name": "Jewelery",
+      "createdAt": 1616518759016,
+      "updatedAt": 1616518759016
+    },
+    {
+      "id": "c3a5768a-ece0-4755-80fb-d9072a698cee",
+      "name": "Industrial",
+      "createdAt": 1616518759016,
+      "updatedAt": 1616518759016
     }
   ],
-  "profile": {
-    "name": "Po"
-  }
+  "products": [],
+  "profile": { "name": "Po" }
 }

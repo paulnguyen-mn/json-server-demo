@@ -1,14 +1,45 @@
 const faker = require("faker");
+const fs = require("fs");
 
 // Set locale to use Vietnamese
 faker.locale = "vi";
 
-// Random data
-console.log(faker.commerce.department());
-console.log(faker.commerce.productName());
-console.log(faker.commerce.productName());
-console.log(faker.commerce.productDescription());
+const randomCategoryList = (n) => {
+  if (n <= 0) return [];
 
-console.log(faker.random.uuid());
-console.log(faker.image.imageUrl());
-console.log(faker.name.findName());
+  const categoryList = [];
+
+  // loop and push category
+  Array.from(new Array(n)).forEach(() => {
+    const category = {
+      id: faker.random.uuid(),
+      name: faker.commerce.department(),
+      createdAt: Date.now(),
+      updatedAt: Date.now(),
+    };
+
+    categoryList.push(category);
+  });
+
+  return categoryList;
+};
+
+// IFFE
+(() => {
+  // random data
+  const categoryList = randomCategoryList(4);
+
+  // prepare db object
+  const db = {
+    categories: categoryList,
+    products: [],
+    profile: {
+      name: "Po",
+    },
+  };
+
+  // write db object to db.json
+  fs.writeFile("db.json", JSON.stringify(db), () => {
+    console.log("Generate data successfully =))");
+  });
+})();
