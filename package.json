@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon main.js",
-    "start": "node main.js"
+    "start": "npm run generate-data && node main.js",
+    "generate-data": "node generate-data.js"
   },
   "keywords": [
     "json-server"
@@ -17,6 +18,7 @@
     "json-server": "^0.16.3"
   },
   "devDependencies": {
+    "faker": "^5.4.0",
     "nodemon": "^2.0.7"
   }
 }
