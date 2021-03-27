@@ -15,7 +15,8 @@
   "author": "Paul Nguyen",
   "license": "MIT",
   "dependencies": {
-    "json-server": "^0.16.3"
+    "json-server": "^0.16.3",
+    "query-string": "^7.0.0"
   },
   "devDependencies": {
     "faker": "^5.4.0",
