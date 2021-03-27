@@ -1,0 +1,54 @@
+@baseUrl=http://localhost:3000/api
+@resourceName=products
+
+# Products
+
+# @name getAll
+GET {{baseUrl}}/{{resourceName}}
+
+###
+
+# @name filterProducts
+GET {{baseUrl}}/{{resourceName}}?price_gte=900
+
+###
+
+# @name filterProducts
+GET {{baseUrl}}/{{resourceName}}?name_like=tasty
+
+
+###
+
+# @name pagination
+GET {{baseUrl}}/{{resourceName}}?_page=1&_limit=20
+
+###
+
+# @name sort
+GET {{baseUrl}}/{{resourceName}}?_sort=price&_order=desc
+
+
+###
+
+# @name addNew
+POST {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+
+{
+  "name": "Laptop"
+}
+
+###
+
+# @name update
+PATCH {{baseUrl}}/{{resourceName}}/2
+Content-Type: application/json
+
+{
+  "name": "New Laptop"
+}
+
+###
+
+# @name remove
+DELETE {{baseUrl}}/{{resourceName}}/2
