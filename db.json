@@ -245,7 +245,20 @@
       "createdAt": 1616839770241,
       "updatedAt": 1616839770241,
       "thumbnailUrl": "http://placeimg.com/400/400"
+    },
+    {
+      "categoryId": "28759f7e-3509-4064-920a-406dd426033a",
+      "name": "Tasty Plastic Chips Update",
+      "color": "red",
+      "price": 950,
+      "description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+      "thumbnailUrl": "http://placeimg.com/400/400",
+      "createdAt": 1616840523918,
+      "updatedAt": 1616840596705,
+      "id": "KkSXxPt"
     }
   ],
-  "profile": { "name": "Po" }
+  "profile": {
+    "name": "Po"
+  }
 }

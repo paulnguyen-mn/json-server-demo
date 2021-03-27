@@ -35,17 +35,24 @@ POST {{baseUrl}}/{{resourceName}}
 Content-Type: application/json
 
 {
-  "name": "Laptop"
+  "categoryId": "28759f7e-3509-4064-920a-406dd426033a",
+  "name": "Tasty Plastic Chips",
+  "color": "cyan",
+  "price": 931,
+  "description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+  "thumbnailUrl": "http://placeimg.com/400/400"
 }
 
 ###
 
 # @name update
-PATCH {{baseUrl}}/{{resourceName}}/2
+PATCH {{baseUrl}}/{{resourceName}}/KkSXxPt
 Content-Type: application/json
 
 {
-  "name": "New Laptop"
+  "name": "Tasty Plastic Chips Update",
+  "color": "red",
+  "price": 950
 }
 
 ###
